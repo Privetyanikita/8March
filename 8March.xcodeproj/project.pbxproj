@@ -10,8 +10,9 @@
 		8417DCCD2B9A68A5008F1305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417DCCC2B9A68A5008F1305 /* AppDelegate.swift */; };
 		8417DCCF2B9A68A5008F1305 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417DCCE2B9A68A5008F1305 /* SceneDelegate.swift */; };
 		8417DCD12B9A68A5008F1305 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417DCD02B9A68A5008F1305 /* ViewController.swift */; };
-		8417DCD42B9A68A5008F1305 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8417DCD32B9A68A5008F1305 /* Base */; };
 		8417DCD62B9A68A7008F1305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8417DCD52B9A68A7008F1305 /* Assets.xcassets */; };
+		8417DCE22B9A6CDD008F1305 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8417DCE12B9A6CDD008F1305 /* SnapKit */; };
+		8417DCE52B9A82B0008F1305 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8417DCE42B9A82B0008F1305 /* Lobster-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +20,9 @@
 		8417DCCC2B9A68A5008F1305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8417DCCE2B9A68A5008F1305 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8417DCD02B9A68A5008F1305 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8417DCD32B9A68A5008F1305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8417DCD52B9A68A7008F1305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8417DCDA2B9A68A7008F1305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8417DCE42B9A82B0008F1305 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8417DCE22B9A6CDD008F1305 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +59,9 @@
 				8417DCCC2B9A68A5008F1305 /* AppDelegate.swift */,
 				8417DCCE2B9A68A5008F1305 /* SceneDelegate.swift */,
 				8417DCD02B9A68A5008F1305 /* ViewController.swift */,
-				8417DCD22B9A68A5008F1305 /* Main.storyboard */,
 				8417DCD52B9A68A7008F1305 /* Assets.xcassets */,
 				8417DCDA2B9A68A7008F1305 /* Info.plist */,
+				8417DCE42B9A82B0008F1305 /* Lobster-Regular.ttf */,
 			);
 			path = 8March;
 			sourceTree = "<group>";
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = 8March;
+			packageProductDependencies = (
+				8417DCE12B9A6CDD008F1305 /* SnapKit */,
+			);
 			productName = 8March;
 			productReference = 8417DCC92B9A68A5008F1305 /* 8March.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 8417DCC02B9A68A5008F1305;
+			packageReferences = (
+				8417DCE02B9A6CDD008F1305 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8417DCCA2B9A68A5008F1305 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -123,7 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8417DCD62B9A68A7008F1305 /* Assets.xcassets in Resources */,
-				8417DCD42B9A68A5008F1305 /* Base in Resources */,
+				8417DCE52B9A82B0008F1305 /* Lobster-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,17 +149,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8417DCD22B9A68A5008F1305 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8417DCD32B9A68A5008F1305 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8417DCDB2B9A68A7008F1305 /* Debug */ = {
@@ -359,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8417DCE02B9A6CDD008F1305 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8417DCE12B9A6CDD008F1305 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8417DCE02B9A6CDD008F1305 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8417DCC12B9A68A5008F1305 /* Project object */;
 }
