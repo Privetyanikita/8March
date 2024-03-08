@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         element.backgroundColor = .clear
         element.textAlignment = .center
         element.font = UIFont(name: "Lobster-Regular", size: 40)
-        element.textColor = .label
+        element.textColor = .black
         element.numberOfLines = 1
         element.isHidden = true
         return element
