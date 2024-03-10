@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .clear
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         imageView.isHidden = true
         imageView.image = UIImage(named: "photoSmile")
         return imageView
